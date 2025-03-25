@@ -7,11 +7,12 @@ export default function Details() {
 
   const { signOut, session } = useSession();
 
-  useEffect(() => {
-    setTimeout(() => {
-      signOut();
-    }, 3000)
-  }, [])
+  // Uncomment this to test the sign-out functionality when an api gives 401.
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     signOut();
+  //   }, 3000)
+  // }, [])
 
 
   return (
